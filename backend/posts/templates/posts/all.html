@@ -1,0 +1,17 @@
+{% extends "shared/base.html" %}
+{% load static %}
+
+{% block css_file %}
+<link rel="stylesheet" href="{% static 'posts/post.css' %}">
+{% endblock css_file %}
+
+{% block title %}All posts{% endblock title %}
+
+{% block content %}
+<h1>Posts</h1>
+<ul>
+    {% for post in all_posts %}
+    <li> <a href="{% url 'post_detail_by_name' post %}">{{post}}</a></li>
+    {% endfor %}
+</ul>
+{% endblock content %}
