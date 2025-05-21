@@ -24,7 +24,7 @@ This is a full-stack web application built with:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
+git@github.com:Ahmed-Sayed-1/Blog_System.git
 cd your-repo
 ```
 
